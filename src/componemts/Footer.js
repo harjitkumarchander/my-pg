@@ -22,8 +22,8 @@ class Footer extends Component {
 								<li><Link to="/faqs"><i className="fa fa-long-arrow-right" aria-hidden="true"></i>Faq</Link></li>
 								<li><Link to="/feedback"><i className="fa fa-long-arrow-right" aria-hidden="true"></i>Feedback</Link></li>
 								<li><Link to="/contactus"><i className="fa fa-long-arrow-right" aria-hidden="true"></i>Contact</Link></li>
-								<li><Link href="typography.html"><i className="fa fa-long-arrow-right" aria-hidden="true"></i>Short codes</Link></li>
-								<li><Link href="icons.html"><i className="fa fa-long-arrow-right" aria-hidden="true"></i>Icons Page</Link></li>
+								<li><Link to="/"><i className="fa fa-long-arrow-right" aria-hidden="true"></i>Short codes</Link></li>
+								<li><Link to="/"><i className="fa fa-long-arrow-right" aria-hidden="true"></i>Icons Page</Link></li>
 							</ul>
 						</div>
 						<div className="col-md-3 wthree-footer-grid">
@@ -31,7 +31,7 @@ class Footer extends Component {
 							<ul>
 								<li><Link to="/locations"><i className="fa fa-long-arrow-right" aria-hidden="true"></i>Locations Map</Link></li>	
 								<li><Link to="/terms"><i className="fa fa-long-arrow-right" aria-hidden="true"></i>Terms of Use</Link></li>
-								<li><Link href="popular-search.html"><i className="fa fa-long-arrow-right" aria-hidden="true"></i>Popular searches</Link></li>	
+								<li><Link to=""><i className="fa fa-long-arrow-right" aria-hidden="true"></i>Popular searches</Link></li>	
 								<li><Link to="/privacy"><i className="fa fa-long-arrow-right" aria-hidden="true"></i>Privacy Policy</Link></li>	
 							</ul>
 						</div>
@@ -51,7 +51,7 @@ class Footer extends Component {
 								<div className="clearfix"> </div>
 								<ul className="location">
 									<li><span className="glyphicon glyphicon-envelope"></span></li>
-									<li><Link href="mailto:info@example.com">mail@example.com</Link></li>
+									<li><Link to="/">mail@example.com</Link></li>
 								</ul>						
 							</address>
 						</div>
@@ -62,15 +62,15 @@ class Footer extends Component {
 			<div className="agileits-footer-bottom text-center">
 			<div className="container">
 				<div className="w3-footer-logo">
-					<h1><Link href="index.html"><span>Apna</span>PG</Link></h1>
+					<h1><Link to="/"><span>Apna</span>PG</Link></h1>
 				</div>
 				<div className="w3-footer-social-icons">
 					<ul>
-						<li><Link className="facebook" href="#"><i className="fa fa-facebook" aria-hidden="true"></i><span>Facebook</span></Link></li>
-						<li><Link className="twitter" href="#"><i className="fa fa-twitter" aria-hidden="true"></i><span>Twitter</span></Link></li>
-						<li><Link className="flickr" href="#"><i className="fa fa-flickr" aria-hidden="true"></i><span>Flickr</span></Link></li>
-						<li><Link className="googleplus" href="#"><i className="fa fa-google-plus" aria-hidden="true"></i><span>Google+</span></Link></li>
-						<li><Link className="dribbble" href="#"><i className="fa fa-dribbble" aria-hidden="true"></i><span>Dribbble</span></Link></li>
+						<li><Link className="facebook" to="/"><i className="fa fa-facebook" aria-hidden="true"></i><span>Facebook</span></Link></li>
+						<li><Link className="twitter" to="/"><i className="fa fa-twitter" aria-hidden="true"></i><span>Twitter</span></Link></li>
+						<li><Link className="flickr" to="/"><i className="fa fa-flickr" aria-hidden="true"></i><span>Flickr</span></Link></li>
+						<li><Link className="googleplus" to="/"><i className="fa fa-google-plus" aria-hidden="true"></i><span>Google+</span></Link></li>
+						<li><Link className="dribbble" to="/"><i className="fa fa-dribbble" aria-hidden="true"></i><span>Dribbble</span></Link></li>
 					</ul>
 				</div>
 				<div className="copyrights">

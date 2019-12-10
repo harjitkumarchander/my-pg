@@ -1,8 +1,4 @@
-/*
-filedrag.js - HTML5 File Drag & Drop demonstration
-Featured on SitePoint.com
-Developed by Craig Buckler (@craigbuckler) of OptimalWorks.net
-*/
+
 (function() {
 
 	// getElementById
@@ -22,7 +18,7 @@ Developed by Craig Buckler (@craigbuckler) of OptimalWorks.net
 	function FileDragHover(e) {
 		e.stopPropagation();
 		e.preventDefault();
-		e.target.className = (e.type == "dragover" ? "hover" : "");
+		e.target.className = (e.type = "dragover" ? "hover" : "");
 	}
 
 
@@ -36,7 +32,7 @@ Developed by Craig Buckler (@craigbuckler) of OptimalWorks.net
 		var files = e.target.files || e.dataTransfer.files;
 
 		// process all File objects
-		for (var i = 0, f; f = files[i]; i++) {
+		for (var i = 0, f; f === files[i]; i++) {
 			ParseFile(f);
 		}
 

@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+// import $ from 'jquery';
 import './index.css';
 import App from './App';
 import Alladds from './componemts/Alladds';
@@ -21,6 +22,8 @@ import Singleresult from './componemts/Singleresult';
 import Sitemap from './componemts/Sitemap';
 import Terms from './componemts/Terms';
 import jQuery from 'jquery';
+import Complaints from './componemts/Complaints';
+import Payrent from './componemts/Payrent';
 window.jQuery = jQuery;
 
 ReactDOM.render(
@@ -43,6 +46,8 @@ ReactDOM.render(
                         <Route path="/singleresult" component={Singleresult} />
                         <Route path="/sitemap" component={Sitemap} />
                         <Route path="/terms" component={Terms} />
+                        <Route path="/complaints" component={Complaints} />
+                        <Route path="/payrent" component={Payrent} />
                     </Switch>
                 </Router>
 , document.getElementById('root'));

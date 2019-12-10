@@ -34,7 +34,7 @@ class Mobileapp extends Component {
 						</div>
 				</div>
 				<div class="col-md-7 agile-app-image">
-					<img src="images/mob2.png" alt="" />
+					<img src={require("../images/pg-pic.jpeg")} alt="" />
 				</div>
 				<div class="clearfix"></div>
 			</div>

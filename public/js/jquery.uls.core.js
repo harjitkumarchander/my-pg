@@ -1,22 +1,3 @@
-/**
- * Universal Language Selector
- * ULS core component.
- *
- * Copyright (C) 2012 Alolita Sharma, Amir Aharoni, Arun Ganesh, Brandon Harris,
- * Niklas Laxström, Pau Giner, Santhosh Thottingal, Siebrand Mazeland and other
- * contributors. See CREDITS for a list.
- *
- * UniversalLanguageSelector is dual licensed GPLv2 or later and MIT. You don't
- * have to do anything special to choose one license or the other and you don't
- * have to notify anyone which license you are using. You are free to use
- * UniversalLanguageSelector in commercial projects as long as the copyright
- * header is left intact. See files GPL-LICENSE and MIT-LICENSE for details.
- *
- * @file
- * @ingroup Extensions
- * @licence GNU General Public Licence 2.0 or later
- * @licence MIT License
- */
 
 ( function ( $ ) {
 	'use strict';
@@ -25,7 +6,7 @@
 
 	// Region numbers in id attributes also appear in the langdb.
 	/*jshint multistr:true */
-	template = '\
+	template = `\
 		<div class="grid uls-menu uls-wide"> \
 			<div class="row"> \
 				<span id="uls-close" class="icon-close"></span> \
@@ -76,12 +57,8 @@
 			</div>\
 			<div class="row uls-language-list"></div>\
 			<div class="row" id="settings-block"></div>\
-		</div> ';
-	/*jshint multistr:false */
+		</div> `;
 
-	/**
-	 * ULS Public class definition
-	 */
 	ULS = function ( element, options ) {
 		this.$element = $( element );
 		this.options = $.extend( {}, $.fn.uls.defaults, options );
@@ -114,38 +91,19 @@
 	ULS.prototype = {
 		constructor: ULS,
 
-		/**
-		 * A "hook" that runs after the ULS constructor.
-		 * At this point it is not guaranteed that the ULS has its dimensions
-		 * and that the languages lists are initialized.
-		 *
-		 * To use it, pass a function as the onReady parameter
-		 * in the options when initializing ULS.
-		 */
 		ready: function () {
 			if ( this.options.onReady ) {
 				this.options.onReady.call( this );
 			}
 		},
 
-		/**
-		 * A "hook" that runs after the ULS panel becomes visible
-		 * by using the show method.
-		 *
-		 * To use it, pass a function as the onVisible parameter
-		 * in the options when initializing ULS.
-		 */
 		visible: function () {
 			if ( this.options.onVisible ) {
 				this.options.onVisible.call( this );
 			}
 		},
 
-		/**
-		 * Calculate the position of ULS
-		 * Returns an object with top and left properties.
-		 * @returns {Object}
-		 */
+		
 		position: function () {
 			var pos = $.extend( {}, this.$element.offset(), {
 				height: this.$element[0].offsetHeight
@@ -156,9 +114,6 @@
 			};
 		},
 
-		/**
-		 * Show the ULS window
-		 */
 		show: function () {
 			this.$menu.css( this.position() );
 
@@ -204,39 +159,23 @@
 			this.$regionFilters.regionselector( 'show' );
 		},
 
-		/**
-		 * Hide the ULS window
-		 */
 		hide: function () {
 			this.$menu.hide();
 			this.shown = false;
 		},
 
-		/**
-		 * Render the UI elements.
-		 * Does nothing by default. Can be used for customization.
-		 */
 		render: function () {
 			// Rendering stuff here
 		},
 
-		/**
-		 * Callback for no results found context.
-		 */
 		noresults: function () {
 			this.$resultsView.lcd( 'noResults' );
 		},
 
-		/**
-		 * callback for results found context.
-		 */
 		success: function () {
 			this.$resultsView.show();
 		},
 
-		/**
-		 * Bind the UI elements with their event listeners
-		 */
 		listen: function () {
 			var lcd,
 				uls = this;
@@ -308,10 +247,6 @@
 			$( 'html' ).click( $.proxy( this.hide, this ) );
 		},
 
-		/**
-		 * On select handler for search results
-		 * @param langCode
-		 */
 		select: function ( langCode ) {
 			this.hide();
 			this.$languageFilter.trigger( 'searchclear' );
@@ -320,9 +255,6 @@
 			}
 		},
 
-		/**
-		 * On cancel handler for the uls menu
-		 */
 		cancel: function () {
 			this.hide();
 
@@ -382,8 +314,6 @@
 		}
 	};
 
-	/* ULS PLUGIN DEFINITION
-	 * =========================== */
 
 	$.fn.uls = function ( option ) {
 		return this.each( function () {
@@ -405,7 +335,7 @@
 		menu: template,
 		onSelect: null, // Callback function to be called when a language is selected
 		searchAPI: null, // Language search API
-		languages: $.uls.data.getAutonyms(), // Languages to be used for ULS, default is all languages
+		// languages: $.uls.data.getAutonyms(), // Languages to be used for ULS, default is all languages
 		quickList: null, // Array of language codes or function that returns such
 		compact: false, // Show ULS in compact mode
 		showRegions: ['WW', 'AM', 'EU', 'ME', 'AF', 'AS', 'PA']
@@ -417,10 +347,6 @@
 		};
 	}
 
-	/*
-	 * Simple scrollIntoView plugin.
-	 * Scrolls the element to the viewport smoothly if it is not already.
-	 */
 	$.fn.scrollIntoView = function () {
 		return this.each( function () {
 			var scrollPosition,

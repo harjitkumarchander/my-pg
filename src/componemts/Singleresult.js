@@ -2,26 +2,26 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import Topbar from './Topbar';
 import Footer from './Footer';
-import $ from 'jquery';
+// import $ from 'jquery';
 // import flexslider from '../js/jquery.flexslider';
 
 class Singleresult extends Component {
 
-    componentDidMount(){
-            const script = document.createElement("script");
-            script.src = "js/jquery.min.js";
-            script.async = true;
-            script.onload = () => this.scriptLoaded();
+    // componentDidMount(){
+    //         const script = document.createElement("script");
+    //         script.src = "js/jquery.min.js";
+    //         script.async = true;
+    //         script.onload = () => this.scriptLoaded();
             
-        }
-        scriptLoaded(){
-        $(window).load(function() {
-            $('.flexslider').flexslider({
-              animation: "slide",
-              controlNav: "thumbnails",
-            });
-          });
-        }
+    //     }
+    //     scriptLoaded(){
+    //     $(window).load(function() {
+    //         $('.flexslider').flexslider({
+    //           animation: "slide",
+    //           controlNav: "thumbnails",
+    //         });
+    //       });
+    //     }
 
     render() {
         return (

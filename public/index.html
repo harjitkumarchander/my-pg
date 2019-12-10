@@ -1,34 +1,32 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
     <meta charset="utf-8" />
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
     <meta name="description" content="Web site created using create-react-app"/>
+
     <link rel="apple-touch-icon" href="logo192.png" />
-    <link href='//fonts.googleapis.com/css?family=Ubuntu+Condensed' rel='stylesheet' type='text/css' />
-    <link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css' />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"/>
+    <link href='//fonts.googleapis.com/css?family=Ubuntu+Condensed' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
         <title>React App</title>
   </head>
+
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
   </body>
-  
-  <script type="text/javascript" src="./js/bootstrap-select.js"></script>
-  <script type="text/javascript" src="./js/bootstrap-select.js"></script>
+
+  <script type="text/javascript" src="./js/jquery.flexslider.js"></script>
   <script type="text/javascript" src="./js/classie.js"></script>
   <script type="text/javascript" src="./js/easing.js"></script>
   <script type="text/javascript" src="./js/easyResponsiveTabs.js"></script>
   <script type="text/javascript" src="./js/filedrag.js"></script>
-  <script type="text/javascript" src="./js/filedrag.js"></script>
   <script type="text/javascript" src="./js/jquery-1.10.2.js"></script>
   <script type="text/javascript" src="./js/jquery-ui.js"></script>
   <script type="text/javascript" src="./js/jquery.fileupload.js"></script>
-  <script type="text/javascript" src="./js/jquery.flexisel.js"></script>
-  <script type="text/javascript" src="./js/jquery.flexslider.js"></script>
   <script type="text/javascript" src="./js/jquery.knob.js"></script>
   <script type="text/javascript" src="./js/jquery.leanModal.min.js"></script>
   <script type="text/javascript" src="./js/jquery.min.js"></script>
@@ -40,8 +38,215 @@
   <script type="text/javascript" src="./js/jquery.uls.lcd.js"></script>
   <script type="text/javascript" src="./js/jquery.uls.regionfilter.js"></script>
   <script type="text/javascript" src="./js/main.js"></script>
+  <script type="text/javascript"> addEventListener("load", function() { 
+    setTimeout(hideURLbar, 0); }, false); 
+    function hideURLbar(){ 
+      window.scrollTo(0,1); 
+    } 
+  </script>
   <script type="text/javascript" src="./js/move-top.js"></script>
   <script type="text/javascript" src="./js/responsiveslides.min.js"></script>
-  <script type="text/javascript" src="./js/script.js"></script>
+  <!-- <script type="text/javascript" src="./js/script.js"></script> -->
   <script type="text/javascript" src="./js/tabs.js"></script>
+  <script type="text/javascript" src="./js/bootstrap.js"></script>
+  <script type="text/javascript" src="./js/bootstrap-select.js"></script>
+  <script type="text/javascript" src="./js/jquery.flexisel.js"></script>
+  
+  <script>
+    $(document).ready(function () {
+    var mySelect = $('#first-disabled2');
+
+    $('#special').on('click', function () {
+      mySelect.find('option:selected').prop('disabled', true);
+      mySelect.selectpicker('refresh');
+    });
+
+    $('#special2').on('click', function () {
+      mySelect.find('option:disabled').prop('disabled', false);
+      mySelect.selectpicker('refresh');
+    });
+
+    $('#basic2').selectpicker({
+      liveSearch: true,
+      maxOptions: 1
+    });
+    });
+  </script>
+
+
+<script>
+  $( document ).ready( function() {
+    $( '.uls-trigger' ).uls( {
+      onSelect : function( language ) {
+        var languageName = $.uls.data.getAutonym( language );
+        $( '.uls-trigger' ).text( languageName );
+      },
+      quickList: ['en', 'hi', 'he', 'ml', 'ta', 'fr']
+    } );
+  } );
+</script>
+
+
+					<script type="text/javascript">
+						 $(window).load(function() {
+							$("#flexiselDemo3").flexisel({
+								visibleItems:1,
+								animationSpeed: 1000,
+								autoPlay: true,
+								autoPlaySpeed: 5000,    		
+								pauseOnHover: true,
+								enableResponsiveBreakpoints: true,
+								responsiveBreakpoints: { 
+									portrait: { 
+										changePoint:480,
+										visibleItems:1
+									}, 
+									landscape: { 
+										changePoint:640,
+										visibleItems:1
+									},
+									tablet: { 
+										changePoint:768,
+										visibleItems:1
+									}
+								}
+							});
+							
+						});
+             </script>
+             
+             <script>
+              $(function () {	
+                $("#slider").responsiveSlides({
+                auto: true,
+                pager: false,
+                nav: true,
+                speed: 500,
+                maxwidth: 800,
+                namespace: "large-btns"
+                });
+        
+              });
+              </script>
+
+<script type="text/javascript">
+  $(document).ready(function() {              
+    $().UItoTop({ easingType: 'easeOutQuart' });
+    });
+</script>
+
+<script type="text/javascript">
+  jQuery(document).ready(function($) {
+    $(".scroll").click(function(event){		
+      event.preventDefault();
+      $('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+    });
+  });
+</script>
+
+<script>
+(function() {
+
+var bodyEl = document.body,
+  content = document.querySelector( '.content-wrap' ),
+  openbtn = document.getElementById( 'open-button' ),
+  closebtn = document.getElementById( 'close-button' ),
+  isOpen = false;
+  
+function init() {
+  initEvents();
+}
+function initEvents() {
+  openbtn.addEventListener( 'click', toggleMenu );
+  if( closebtn ) {
+    closebtn.addEventListener( 'click', toggleMenu );
+  }
+}
+function toggleMenu() {
+  if( isOpen ) {
+    classie.remove( bodyEl, 'show-menu' );
+  }
+  else {
+    classie.add( bodyEl, 'show-menu' );
+  }
+  isOpen = !isOpen;
+}
+init();
+})();
+</script>
+
+<script>
+
+( function( window ) {
+
+'use strict';
+
+// class helper functions from bonzo https://github.com/ded/bonzo
+
+function classReg( className ) {
+  return new RegExp("(^|\\s+)" + className + "(\\s+|$)");
+}
+
+// classList support for class management
+// altho to be fair, the api sucks because it won't accept multiple classes at once
+var hasClass, addClass, removeClass;
+
+if ( 'classList' in document.documentElement ) {
+  hasClass = function( elem, c ) {
+    return elem.classList.contains( c );
+  };
+  addClass = function( elem, c ) {
+    elem.classList.add( c );
+  };
+  removeClass = function( elem, c ) {
+    elem.classList.remove( c );
+  };
+}
+else {
+  hasClass = function( elem, c ) {
+    return classReg( c ).test( elem.className );
+  };
+  addClass = function( elem, c ) {
+    if ( !hasClass( elem, c ) ) {
+      elem.className = elem.className + ' ' + c;
+    }
+  };
+  removeClass = function( elem, c ) {
+    elem.className = elem.className.replace( classReg( c ), ' ' );
+  };
+}
+
+function toggleClass( elem, c ) {
+  var fn = hasClass( elem, c ) ? removeClass : addClass;
+  fn( elem, c );
+}
+
+var classie = {
+  // full names
+  hasClass: hasClass,
+  addClass: addClass,
+  removeClass: removeClass,
+  toggleClass: toggleClass,
+  // short names
+  has: hasClass,
+  add: addClass,
+  remove: removeClass,
+  toggle: toggleClass
+};
+
+// transport
+if ( typeof define === 'function' && define.amd ) {
+  // AMD
+  define( classie );
+} else {
+  // browser global
+  window.classie = classie;
+}
+
+})( window );
+
+</script>
+
+
+
 </html>

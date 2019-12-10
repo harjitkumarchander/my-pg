@@ -2,7 +2,7 @@
 
 
 .menu-wrap a {
-	    color: #f3f3f3;
+	color: #f3f3f3;
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
 }
@@ -51,7 +51,7 @@
 .menu-button {
 	position: absolute;
 	z-index: 1000;
-	margin: 13px;
+	margin: 15px;
 	padding: 0;
 	width: 2.5em;
 	height: 2.25em;
@@ -61,7 +61,7 @@
 	color: transparent;
 	background: transparent;
 	outline:none;
-	top: 37px;
+	top: 47px;
 }
 .menu-button:active {
 	outline:none;

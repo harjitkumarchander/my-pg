@@ -1,13 +1,15 @@
-import React from 'react';
+import React, { Component } from 'react';
 import './App.css';
 import Mainpage from './componemts/Mainpage';
+import './css/bootstrap.min.css';
 
-function App() {
-  return (
-    <div >
-      <Mainpage />
-    </div>
-  );
+class App extends Component{
+  render(){
+    return(
+      <div  >
+        <Mainpage />
+      </div>
+        );
+    }
 }
-
 export default App;

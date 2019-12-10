@@ -1,16 +1,16 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import '../css/style.css';
-import '../css/menu_sideslide.css';
-import '../css/flexslider.css';
-import '../css/bootstrap-select.css';
-import '../css/bootstrap.min.css';
-import '../css/font-awesome.min.css';
-import '../css/easy-responsive-tabs.css';
-import '../css/jquery-ui1.css';
-import '../css/jquery.uls.css';
-import '../css/jquery.uls.grid.css';
-import '../css/jquery.uls.lcd.css';
+// import '../css/style.css';
+// import '../css/menu_sideslide.css';
+// import '../css/flexslider.css';
+// import '../css/bootstrap-select.css';
+// import '../css/bootstrap.min.css';
+// import '../css/font-awesome.min.css';
+// import '../css/easy-responsive-tabs.css';
+// import '../css/jquery-ui1.css';
+// import '../css/jquery.uls.css';
+// import '../css/jquery.uls.grid.css';
+// import '../css/jquery.uls.lcd.css';
 import Topbar from './Topbar';
 
 

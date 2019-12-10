@@ -31,7 +31,7 @@ class Login extends Component {
 										<button type="button" className="close" data-dismiss="modal">&times;</button>
 										<h3 className="w3ls-password">Get Password</h3>		
 										<p className="get-pw">Enter your email address below and we'll send you an email with instructions.</p>
-										<form action="#" method="post">
+										<form>
 											<input type="text" className="user" name="email" placeholder="Email" required="" />
 											<input type="submit" value="Submit" />
 										</form>
