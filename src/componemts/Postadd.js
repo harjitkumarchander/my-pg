@@ -4,7 +4,7 @@ import Topbar from './Topbar';
 import Footer from './Footer';
 
 
-class ApplyPG extends Component {
+class Postadd extends Component {
     render() {
         return (
             <div>
@@ -44,14 +44,24 @@ class ApplyPG extends Component {
 					  <option>Properties Manager</option>
 					</select><br />
 
-					<label>Society Name<span>*</span></label>
+					<label>Society<span>*</span></label>
 					<select class="">
 					  <option>Is your property in a society?</option>
 					  <option>Yes</option>
 					  <option>No</option>
 					</select><br />
 
-					<div class="clearfix"></div>
+					<label>Society Name<span>*</span></label>
+					<select class="">
+					  <option>Name of society?</option>
+					  <option>1</option>
+					  <option>2</option>
+					  <option>3</option>
+					  <option>4</option>
+					  <option>5</option>
+					</select><br />
+
+					{/* <div class="clearfix"></div>
 					<label>Title <span>*</span></label>
 					<input type="text" class="phone" placeholder="" />
 					<div class="clearfix"></div>
@@ -78,7 +88,7 @@ class ApplyPG extends Component {
 						</div>
 					<div class="clearfix"></div>
 						<script src="js/filedrag.js"></script>
-				</div>
+				</div> */}
 					<div class="personal-details">
 					<form>
 						<label>Your Name <span>*</span></label>
@@ -104,4 +114,4 @@ class ApplyPG extends Component {
         )
     }
 }
-export default ApplyPG; 
+export default Postadd; 

@@ -26,7 +26,7 @@ class Topbar extends Component {
 				<div className="menu-wrap">
 				<nav className="menu">
 					<div className="icon-list">
-						<Link to="/applypg"><i className="fa fa-fw fa-mobile"></i><span>Book Now</span></Link>
+						<Link to="/bookpg"><i className="fa fa-fw fa-mobile"></i><span>Book Now</span></Link>
 						<Link to="/payrent"><i className="fa fa-fw fa-laptop"></i><span>Pay Rent</span></Link>
 						<Link to="/complaints"><i className="fa fa-fw fa-car"></i><span>Ccomplaints</span></Link>
 						<Link to="/contactus"><i className="fa fa-fw fa-motorcycle"></i><span>Contact Us</span></Link>
@@ -54,9 +54,10 @@ class Topbar extends Component {
 					<li className="dropdown head-dpdn">
 						<Link to="/help"><i className="fa fa-question-circle" aria-hidden="true"></i> Help</Link>
 					</li>
-					<li className="dropdown head-dpdn">
+					
+					{/* <li className="dropdown head-dpdn">
 						<Link to="/"><span className="active uls-trigger"><i className="fa fa-language" aria-hidden="true"></i>languages</span></Link>
-					</li>
+					</li> */}
 					<li className="dropdown head-dpdn">
 						<div className="header-right">			
 		</div>
@@ -82,10 +83,10 @@ class Topbar extends Component {
 							<option value="Family">Family</option>
 						</select>
 						<button type="submit" className="btn btn-default" aria-label="Left Align">
-							<i className="fa fa-search" aria-hidden="true"> </i>
+							<Link to="/categories"> <i className="fa fa-search" aria-hidden="true"> </i></Link>
 						</button>
 					</form>
-				<Link to="/applypg" className="post-w3layouts-ad" href="post-ad.html">Post Add</Link>
+				<Link to="/postadd" className="post-w3layouts-ad" href="post-ad.html">Post Add</Link>
 				</div>	
 				<div className="clearfix"></div>
 			</div>

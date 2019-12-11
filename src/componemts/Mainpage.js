@@ -16,19 +16,19 @@ class Mainpage extends Component {
 				<li>
 					<div className="w3ls-slide-text">
 						<h3>Look online PG anytime</h3>
-						<Link to="/" className="w3layouts-explore-all">Browse all Categories</Link>
+						<Link to="/categories" className="w3layouts-explore-all">Browse all Categories</Link>
 					</div>
 				</li>
 				<li>
 					<div className="w3ls-slide-text">
 						<h3>Find the Best Deals Here</h3>
-						<Link to="/" className="w3layouts-explore">Explore</Link>
+						<Link to="/categories" className="w3layouts-explore">Explore</Link>
 					</div>
 				</li>
 				<li>
 					<div className="w3ls-slide-text">
 						<h3>The Easiest Way to get a PG</h3>
-						<Link to="/" className="w3layouts-explore">Find a PG</Link>
+						<Link to="/categories" className="w3layouts-explore">Find a PG</Link>
 					</div>
 				</li>
 			</ul>
@@ -192,7 +192,7 @@ class Mainpage extends Component {
 				 <div className="w3l-popular-ads-info">
 					<div className="col-md-4 w3ls-portfolio-left">
 						<div className="portfolio-img event-img">
-							<img src={require("../images/pg-pic.jpeg")} className ="img-responsive" alt="" />
+							<img src={require("../images/pg-boys.jpg")} className ="img-responsive" alt="" />
 							<div className="over-image"></div>
 						</div>
 						<div className="portfolio-description">
@@ -206,7 +206,7 @@ class Mainpage extends Component {
 					</div>
 					<div className="col-md-4 w3ls-portfolio-left">
 						<div className="portfolio-img event-img">
-							<img src={require("../images/pg-pic.jpeg")} className="img-responsive" alt="" />
+							<img src={require("../images/pg-boys.jpg")} className="img-responsive" alt="" />
 							 <div className="over-image"></div>
 						</div>
 						<div className="portfolio-description">
@@ -220,7 +220,7 @@ class Mainpage extends Component {
 					</div>
 					<div className="col-md-4 w3ls-portfolio-left">
 						<div className="portfolio-img event-img">
-							<img src={require("../images/pg-pic.jpeg")} className="img-responsive" alt="" />
+							<img src={require("../images/pg-boys.jpg")} className="img-responsive" alt="" />
 							 <div className="over-image"></div>
 						</div>
 						<div className="portfolio-description">
@@ -234,7 +234,7 @@ class Mainpage extends Component {
 					</div>
 					<div className="col-md-4 w3ls-portfolio-left">
 						<div className="portfolio-img event-img">
-							<img src={require("../images/pg-pic.jpeg")} className="img-responsive" alt="" />
+							<img src={require("../images/pg-girls.jpeg")} className="img-responsive" alt="" />
 							 <div className="over-image"></div>
 						</div>
 						<div className="portfolio-description">
@@ -248,7 +248,7 @@ class Mainpage extends Component {
 					</div>
 					<div className="col-md-4 w3ls-portfolio-left">
 						<div className="portfolio-img event-img">
-							<img src={require("../images/pg-pic.jpeg")} className="img-responsive" alt="" />
+							<img src={require("../images/pg-girls.jpeg")} className="img-responsive" alt="" />
 							 <div className="over-image"></div>
 						</div>
 						<div className="portfolio-description">
@@ -262,7 +262,7 @@ class Mainpage extends Component {
 					</div>
 					<div className="col-md-4 w3ls-portfolio-left">
 						<div className="portfolio-img event-img">
-							<img src={require("../images/pg-pic.jpeg")} className="img-responsive" alt="" />
+							<img src={require("../images/pg-girls.jpeg")} className="img-responsive" alt="" />
 							 <div className="over-image"></div>
 						</div>
 						<div className="portfolio-description">
@@ -287,7 +287,7 @@ class Mainpage extends Component {
 								<li>
 									<div className="col-md-3 biseller-column">
 										<Link to="">
-											<img src={require("../images/parking.png")} alt="" />
+											<img src={require("../images/wifi.png")} alt="" />
 											<span className="price">&#36; 450</span>
 										</Link> 
 										<div className="w3-ad-info">
@@ -297,7 +297,7 @@ class Mainpage extends Component {
 									</div>
 									<div className="col-md-3 biseller-column">
 										<Link to="">
-											<img src={require("../images/parking.png")} alt="" />
+											<img src={require("../images/breakfast.jpeg")} alt="" />
 											<span className="price">&#36; 399</span>
 										</Link> 
 										<div className="w3-ad-info">
@@ -307,7 +307,7 @@ class Mainpage extends Component {
 									</div>
 									<div className="col-md-3 biseller-column">
 										<Link to="">
-											<img src={require("../images/parking.png")} alt="" />
+											<img src={require("../images/security.jpeg")} alt="" />
 											<span className="price">&#36; 199</span>
 										</Link> 
 										<div className="w3-ad-info">
@@ -317,7 +317,7 @@ class Mainpage extends Component {
 									</div>
 									<div className="col-md-3 biseller-column">
 										<Link to="">
-											<img src={require("../images/parking.png")} alt="" />
+											<img src={require("../images/cleaning.png")} alt="" />
 											<span className="price">&#36; 159</span>
 										</Link> 
 										<div className="w3-ad-info">
@@ -329,7 +329,7 @@ class Mainpage extends Component {
 								<li>
 									<div className="col-md-3 biseller-column">
 										<Link to="">
-											<img src={require("../images/parking.png")} alt="" />
+											<img src={require("../images/power.png")} alt="" />
 											<span className="price">&#36; 1599</span>
 										</Link> 
 										<div className="w3-ad-info">
@@ -339,7 +339,7 @@ class Mainpage extends Component {
 									</div>
 									<div className="col-md-3 biseller-column">
 										<Link to="">
-											<img src={require("../images/parking.png")} alt="" />
+											<img src={require("../images/parking.jpeg")} alt="" />
 											<span className="price">&#36; 1099</span>
 										</Link> 
 										<div className="w3-ad-info">
@@ -349,7 +349,7 @@ class Mainpage extends Component {
 									</div>
 									<div className="col-md-3 biseller-column">
 										<Link to="">
-											<img src={require("../images/parking.png")} alt="" />
+											<img src={require("../images/furnished.png")} alt="" />
 											<span className="price">&#36; 109</span>
 										</Link> 
 										<div className="w3-ad-info">
@@ -359,11 +359,11 @@ class Mainpage extends Component {
 									</div>
 									<div className="col-md-3 biseller-column">
 										<Link to="">
-											<img src={require("../images/parking.png")} alt="" />
+											<img src={require("../images/laundry.jpeg")} alt="" />
 											<span className="price">&#36; 189</span>
 										</Link> 
 										<div className="w3-ad-info">
-											<h5>Spotless Linen</h5>
+											<h5>Laundry</h5>
 											<span>3 hour ago</span>
 										</div>
 									</div>
